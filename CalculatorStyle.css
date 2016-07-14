@@ -1,0 +1,92 @@
+#bigName{
+	color: #ffdb99;
+	text-align: center;
+	font-family: 'Indie Flower', calibri;
+	font-size: 6em;
+}
+.calcButton{
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	background-color: pink;
+	padding: 15px;
+	border-radius: 10px;
+	border: 1px solid white;
+	font-family: 'Indie Flower', Calibri;
+	position: relative;
+	left:calc(50% - 80px);
+}
+.calcButton:hover{
+	background-color: #ffdb99;
+}
+.calcButton:active{
+	outline: none;
+}
+.calcButton:focus{
+	outline: none;
+}
+#buttonOne{
+	padding: 15px 16px 15px 16px;
+}
+#buttonEight{
+	padding: 15px 16px 15px 16px;
+}
+#buttonNine{
+	
+}
+#minusButton{
+	padding: 15px 15px 15px 16px;
+}
+#buttonProduct{
+	padding: 15px 15px 15px 16px;
+}
+#buttonDivide{
+	padding: 15px 16px 15px 16px;
+}
+#equalButton{
+	padding: 15px 37px 15px 32px;
+}
+#calcPrint{
+	border: 2px solid pink;
+	margin: 50px 539px 1px 539px
+	
+}
+#container{
+	border: 1px solid white;
+	margin: 50px 539px 1px 539px;
+}
+#container2{
+	
+	border: 1px solid white;
+	margin: 1px 539px 1px 539px;
+}
+#container3{
+	
+	border: 1px solid white;
+	margin: 1px 539px 1px 539px;
+}
+#container4{
+	
+	border: 1px solid white;
+	margin: 1px 539px 1px 539px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+#inputBox{
+	border: none;
+	height: 1em;
+	size: 1em;
+	font-family: "Indie Flower", Calibri;
+	font-size: 18px;
+	text-align: right;
+	/*color: pink;*/
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

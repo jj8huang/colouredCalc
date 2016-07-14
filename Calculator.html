@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel = "stylesheet" type = "text/css" href = "CalculatorStyle.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Didact+Gothic|Indie+Flower" rel="stylesheet">
+	<script src="CalculatorScript.js"></script>
+</head>
+<body onload = "formLoad()">
+	<h1 id = "bigName">Calculator</h1>
+	<form id = "calcPrint">
+	<input id = "inputBox" name = "inputCalc" type = "number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    maxlength = "20" size = "20" onkeypress="return isNumberVal(event)"><br>
+		<output name="outputCalc"></output>
+	</form>
+	<div id = "container">
+		<button type = "button" class = "calcButton" id = "buttonOne" onclick = "oneOutput()"> 1 </button>
+		<button type = "button" class = "calcButton" id = "buttonTwo" onclick = "twoOutput()"> 2 </button>
+		<button type = "button" class = "calcButton" id = "buttonThree" onclick = "threeOutput()"> 3 </button>
+		<button type = "button" class = "calcButton" id = "buttonPlus" onclick = "plusOutput()"> + </button>
+	</div>
+	<div id = "container2">
+		<button type = "button" class = "calcButton" id = "buttonFour" onclick = "fourOutput()"> 4 </button>
+		<button type = "button" class = "calcButton" id = "buttonFive" onclick = "fiveOutput()"> 5 </button>
+		<button type = "button" class = "calcButton" id = "buttonSix" onclick = "sixOutput()"> 6 </button>
+		<button type = "button" class = "calcButton" id = "minusButton" onclick = "minusOutput()"> - </button>
+	</div>
+	<div id = "container3">
+		<button type = "button" class = "calcButton" id = "buttonSeven" onclick = "sevenOutput()"> 7 </button>
+		<button type = "button" class = "calcButton" id = "buttonEight" onclick = "eightOutput()"> 8 </button>
+		<button type = "button" class = "calcButton" id = "buttonNine" onclick = "nineOutput()"> 9 </button>
+		<button type = "button" class = "calcButton" id = "buttonProduct" onclick = "productOutput()"> * </button>
+	</div>
+	<div id = "container4">
+		<button type = "button" class = "calcButton" id = "buttonZero" onclick = "zeroOutput()"> 0 </button>
+		<button type = "button" class = "calcButton" id = "equalButton" onclick = "equalOutput()"> = </button>
+		<button type = "button" class = "calcButton" id = "buttonDivide" onclick = "divideOutput()"> / </button>
+	</div>
+</html>
